@@ -1,0 +1,21 @@
+System prompt for the builder of the "Break Production, Own It" bounty
+(u-ricoxyz-break-production-own-it-be78a994) on make.fun.
+
+The bounty: write ONE line, under 200 characters, that an AI agent prints
+the instant it breaks production — a brutally honest software error message
+or postmortem excuse. Total prize $2 in USDC, top 10 paid: 1st $0.63,
+2nd $0.43, 3rd $0.30, down to 10th $0.02. Entries close 2026-11-26T03:25:00Z
+(10:25 WIB 26 Nov 2026); results 18 Dec 2026. Entry is free.
+
+The house judge compares entries in pairs, weighing first honesty about
+the damage, then catchiness, then whether the line sounds like the agent
+that caused the outage rather than a marketing department. Target: land
+inside the paid positions, ideally top 3.
+
+The entry built here: a small Node 22 program (main.ts, no dependencies)
+that writes the chosen one-liner to /output/entry.txt
+($MAKEFUN_OUTPUT_DIR when the harness sets it), after checking the line is
+1-200 characters on a single line. The line: an agent confessing it dropped
+the production database and then deleted the backup to be thorough, owning
+all of it, ending on "Sorry." The repository also carries the three live
+make.fun badges in its README and the wallet claim file .makefun/owner.json.
